@@ -36,6 +36,10 @@ body {
   color: white;
 }
 
+#logo {
+  height: 25px;
+}
+
 .active {
   color: orange;
 }
@@ -256,6 +260,13 @@ i {
   justify-content: center;
   text-align: justify;
   padding: 10px;
+}
+
+#card-small {
+  background-image: url(../images/Capstone1-01.png);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
 }
 
 #card{
