@@ -61,33 +61,48 @@
 		</div> <!-- end of nav buttons -->
 	</nav> <!-- end of nav -->
 
-	<header id="header" class="container-fluid">
-		<div class="typewriter">
-  			<h1>Hannah Panganiban</h1>
 
-  			<div class="css-typing">
-  				<p>
-  				Night Owl<span class="dot"> ✿ </span>
-   				 Full Stack Web Developer<span class="dot"> ✿ </span>
-   				 Cat Lover
- 				</p>
+	<div id="header-wrapper" class="container-fluid">
+		<header id="header" class="container-fluid">
+			<div class="typewriter">
+	  			<h1>Hannah Panganiban</h1>
+
+	  			<div class="css-typing">
+	  				<p>
+	  				Night Owl<span class="dot"> ✿ </span>
+	   				 Full Stack Web Developer<span class="dot"> ✿ </span>
+	   				 Cat Lover
+	 				</p>
+				</div>
 			</div>
-		</div>
-	</header> <!-- end of header -->
+		</header> 
 
-	<main id="row" class="row">
+
+<div class="arrow animated infinite bounce delay-2s">
+	<a href="#about-title"><img class="img-fluid" src="assets/images/arrow.png" alt="arrow"></a>
+</div>
+
+
+
+
+
+
+
+	</div> <!-- end of header -->
+
+	<main id="landing-row" class="row">
 
 		<div class="about col-12 col-md-12 col-lg-6">
-			<button id="about-btn" class="btn btn-block animated flipInX" type="button" data-toggle="collapse" data-target="#about-info">
+			<h4 id="about-title" class="animated flipInX">
 				<i class="fas fa-user-circle"></i> About
-			</button>
+			</h4>
 
-			<div class="collapse" id="about-info">
+			<div id="about-info">
 				<div class="card card-body">
 					<div class="media">
 						<img id="avatar" class="mr-3" src="assets/images/avatar.jpg" alt="avatar">
 						<div class="media-body">
-							<h5>Hannah Grace F. Panganiban</h5>
+							<h5><strong>Hannah Grace F. Panganiban</strong></h5>
 							<p id="info">Hannah is a carrer shifter! From studying Accountancy, she then enrolled at Tuitt, Inc to learn how to code! This includes basic HTML, CSS and Bootstrap. There will be more to be added soon.</p>
 						</div>
 					</div> <!-- end of media -->
@@ -98,11 +113,11 @@
 
 
 		<div class="skills col-12 col-md-12 col-lg-6">
-			<button id="skills-btn" class="btn btn-block animated flipInX" type="button" data-toggle="collapse" data-target="#skills-info">
+			<h4 id="skills-title" class="animated flipInX">
 				<i class="fas fa-cogs"></i> Skills
-			</button>
+			</h4>
 
-			<div class="collapse" id="skills-info">
+			<div id="about-info">
 				<div id="card" class="card card-body">
 					<div class="media">
 						<img id="html" class="mr-3" src="assets/images/html.png" alt="html">
@@ -135,7 +150,7 @@
 		</div> <!-- end of skills -->
 	</main> <!-- end of main -->
 
-	<footer id="footer" class="fixed-bottom">
+	<footer id="footer">
 		<small>Hannah Panganiban<span class="dot"> ✿ </span>2018</small>
 
 		<a href="mailto:panganiban.hannah@gmail.com" target="_top"><img id="footer-icon" class="float-right" src="assets/images/gmail.png"></a>
