@@ -10,7 +10,7 @@ body {
 	background-image: url(../images/bg2.jpg);
   background-color: black;
 	background-size: cover;
-	background-position: top;
+	background-position: left;
 	background-attachment: fixed;
 	margin: 0 auto;
 }
@@ -55,6 +55,10 @@ html {
 #header-wrapper {
   height: 100vh;
   position: relative;
+  background-image: url(../images/bg2.jpg);
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
 }
 
 #header {
