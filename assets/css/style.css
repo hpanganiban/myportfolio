@@ -19,19 +19,8 @@ html {
   scroll-behavior: smooth;
 }
 
-#header-wrapper {
-  height: 100vh;
-  position: relative;
-}
 
-#header {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-  margin-top: 30vh;
-}
-
+/*navigation*/
 #navbar {
   background-color: black;
 }
@@ -49,8 +38,30 @@ html {
   height: 25px;
 }
 
-.active {
+#active {
   color: orange;
+}
+/*end of navigation*/
+
+
+
+
+
+
+
+/*home page*/
+
+#header-wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+#header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+  padding-top: 30vh;
 }
 
 .dot {
@@ -151,6 +162,15 @@ h1 {
   }
 }
 
+.arrow {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+}
+
 #landing-row {
   width: 100%;
   height: 100vh;
@@ -159,43 +179,6 @@ h1 {
   background-position: top;
   background-attachment: fixed;
   margin: 0 auto;
-}
-
-#row {
-	width: 100%;
-	box-sizing: content-box;
-	margin: 0px;
-  padding: 50px 0px;
-}
-
-#demo {
-  height: 250px;
-  display: block;
-  margin-top: 20px;
-}
-
-#carousel-img {
-  width: 100%;
-  height: 250px;
-}
-
-.carousel-inner img {
-  width: 100%;
-}
-
-#html-bar {
-  width: 80%;
-  background-color: orange;
-}
-
-#css-bar {
-  width: 70%;
-  background-color: skyblue;
-}
-
-#bootstrap-bar {
-  width: 50%;
-  background-color: indigo;
 }
 
 strong {
@@ -222,20 +205,52 @@ strong {
   border-radius: 10px;
 }
 
-
-.arrow {
-  position: absolute;
-  bottom: 30vh;
-  left: 50%;
-  margin-left:-20px;
-  width: 40px;
-  height: 40px;
+#info {
+  color: black;
 }
 
+#html-bar {
+  width: 80%;
+  background-color: orange;
+}
+
+#css-bar {
+  width: 70%;
+  background-color: skyblue;
+}
+
+#bootstrap-bar {
+  width: 50%;
+  background-color: indigo;
+}
+
+/*end of home page*/
 
 
 
 
+/*project page*/
+#row {
+	width: 100%;
+	box-sizing: content-box;
+	margin: 0px;
+  padding: 50px 0px;
+}
+
+#demo {
+  height: 250px;
+  display: block;
+  margin-top: 20px;
+}
+
+#carousel-img {
+  width: 100%;
+  height: 250px;
+}
+
+.carousel-inner img {
+  width: 100%;
+}
 
 #capstone-btn {
   background-color: rgb(0,0,0,0.5);
@@ -271,13 +286,8 @@ strong {
 #capstone-btn:focus,
 #capmd1-btn:focus,
 #capmd2-btn:focus,
-#capmd3-btn:focus,
-i {
+#capmd3-btn:focus {
   color: orange;
-}
-
-#info {
-  color: black;
 }
 
 .card {
@@ -358,28 +368,18 @@ i {
   opacity: 1;
 }
 
-#footer {
-  background-color: black;
-  padding: 5px;
-}
-
-#footer-icon {
-  height: 30px;
-  width: 30px;
-  margin-left: 10px;
-}
-
-#footer-icon:hover {
-  box-shadow: 0px 0px 10px white;
-  border-radius: 5px;
-}
 
 .capmd1,
 .capmd2,
 .capmd3 {
   display: none;
 }
+/*end project page*/
 
+
+
+
+/*contact page*/
 #form {
   margin-bottom: 20px;
 }
@@ -412,8 +412,27 @@ h2 {
   background-color: orange;
   border-color: orange;
 }
+/*end of contact page*/
 
 
+
+/*footer */
+#footer {
+  background-color: black;
+  padding: 5px;
+}
+
+#footer-icon {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+#footer-icon:hover {
+  box-shadow: 0px 0px 10px white;
+  border-radius: 5px;
+}
+/*end of footer*/
 
 
 
