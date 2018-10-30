@@ -165,7 +165,7 @@ h1 {
 
 .arrow {
   position: absolute;
-  bottom: 20vh;
+  bottom: 10vh;
   left: 50%;
   margin-left:-20px;
   width: 40px;
@@ -466,6 +466,14 @@ h2 {
   font-size: 10px;
   }
 
+  #header {
+  padding-top: 20vh;
+  }
+
+  .arrow {
+  bottom: 20vh;
+  }
+
   #about-title,
   #skills-title {
     margin-top: 30px;
@@ -545,6 +553,14 @@ h2 {
 
   .css-typing p {
   font-size: 12px;
+  }
+
+  #header {
+  padding-top: 20vh;
+  }
+
+  .arrow {
+  bottom: 20vh;
   }
 
   #landing-row {
