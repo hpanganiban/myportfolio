@@ -313,15 +313,22 @@ strong {
   border-radius: 10px;
 }
 
-#card-1 {
+#card1 {
   background-image: url(../images/Capstone1-01.PNG);
   background-size: cover;
   background-position: center;
   background-blend-mode: screen;
 }
 
-#card-2 {
+#card2 {
   background-image: url(../images/Capstone2-01.png);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+}
+
+#card3 {
+  background-image: url(../images/Capstone3-01.png);
   background-size: cover;
   background-position: center;
   background-blend-mode: screen;
