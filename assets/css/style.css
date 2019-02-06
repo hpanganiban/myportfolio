@@ -119,6 +119,10 @@ html {
   color: black;
 }
 
+.nav-pills .nav-link.active {
+  background-color: rgb(0,0,0,0.7);
+}
+
 .carousel-caption {
   background-color: rgb(0,0,0,0.7);
   padding: 10px 0;
