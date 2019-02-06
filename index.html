@@ -222,37 +222,41 @@
 
 
 							<div class="col-12 col-lg-6">
-								<dl class="row m-0 pt-3">
-									<dt class="col-12 col-lg-3 sub-title"> Description: </dt>
-									<dd class="col-10 offset-1 col-lg-9 offset-lg-0 project-text"> A static website focusing on Frontend Development. Has features that allow the users/visitors to navigate through the website interactively by deciding and choosing their own path. With this, users/visitors can have a fun experience on discovering various hidden pages and story routes/endings. </dd>
+								<div class="nav nav-pills nav-justified" role="tablist">
+									<a class="nav-item nav-link active sub-title" data-toggle="pill" href="#cap01-description" role="tab"> Description </a>
 
-									<dt class="col-12 col-lg-3 sub-title"> Features: </dt>
-									<dd class="col-10 offset-1 col-lg-9 offset-lg-0">
-										<ul>
+									<a class="nav-item nav-link sub-title" data-toggle="pill" href="#cap01-features" role="tab"> Features </a>
+
+									<a class="nav-item nav-link sub-title" data-toggle="pill" href="#cap01-environment" role="tab"> Environment </a>
+								</div>
+
+								<div class="tab-content px-3 py-1">
+									<div class="tab-pane fade show active" id="cap01-description" role="tabpanel">
+										<p class="project-text"> A static website focusing on Frontend Development. Has features that allow the users/visitors to navigate through the website interactively by deciding and choosing their own path. With this, users/visitors can have a fun experience on discovering various hidden pages and story routes/endings. </p>
+									</div>
+
+									<div class="tab-pane fade" id="cap01-features" role="tabpanel">
+										<ul class="pl-3">
 											<li class="project-text"> User-Interactive </li>
 											<li class="project-text"> Fun and Uplifting Background Music </li>
 											<li class="project-text"> Contains different Story Routes </li>
 											<li class="project-text"> Mobile Responsive Design </li>
 										</ul>
-									</dd>
+									</div>
 
-									<dt class="col-12 col-lg-3 sub-title"> Environment: </dt>
-									<dd class="col-10 offset-1 col-lg-9 offset-lg-0 row p-0">
-										<ul class="col-6">
+									<div class="tab-pane fade" id="cap01-environment" role="tabpanel">
+										<ul class="pl-3">
 											<li class="project-text"> HTML </li>
 											<li class="project-text"> CSS </li>
-										</ul>
-
-										<ul class="col-6">
 											<li class="project-text"> JavaScript </li>
 											<li class="project-text"> Bootstrap </li>
 										</ul>
-									</dd>
-								</dl>
+									</div>
+								</div> <!-- end of tab content -->
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> <!-- end of capstone 1 -->
 
 
 				<div id="capstone2" class="pt-5">
@@ -262,14 +266,22 @@
 
 					<div class="project-content">
 						<div class="row">
-							<div class="col-12 col-lg-6">
-								<dl class="row m-0 pt-3">
-									<dt class="col-12 col-lg-3 sub-title"> Description: </dt>
-									<dd class="col-10 offset-1 col-lg-9 offset-lg-0 project-text"> An E-Commerce website focusing on Backend Development. Allows non-registed visitors and registered users to view, search, filter items and add those to cart. Registered users can proceed to Payment, which can either be COD or PayPal. An email confirmation will be received upon order placement. Has Order History grouped by Order status for easier tracking of transactions. Admin can update the order status of every transactions made by the users and has CRUD for Items (e.g adding, editing, deleting). </dd>
+							<div class="col-12 col-lg-6 order">
+								<div class="nav nav-pills nav-justified" role="tablist">
+									<a class="nav-item nav-link active sub-title" data-toggle="pill" href="#cap02-description" role="tab"> Description </a>
 
-									<dt class="col-12 col-lg-3 sub-title"> Features: </dt>
-									<dd class="col-10 offset-1 col-lg-9 offset-lg-0">
-										<ul>
+									<a class="nav-item nav-link sub-title" data-toggle="pill" href="#cap02-features" role="tab"> Features </a>
+
+									<a class="nav-item nav-link sub-title" data-toggle="pill" href="#cap02-environment" role="tab"> Environment </a>
+								</div>
+
+								<div class="tab-content px-3 py-1">
+									<div class="tab-pane fade show active" id="cap02-description" role="tabpanel">
+										<p class="project-text"> An E-Commerce website focusing on Backend Development. Allows non-registed visitors and registered users to view, search, filter items and add those to cart. Registered users can proceed to Payment, which can either be COD or PayPal. An email confirmation will be received upon order placement. Has Order History grouped by Order status for easier tracking of transactions. Admin can update the order status of every transactions made by the users and has CRUD for Items (e.g adding, editing, deleting). </p>
+									</div>
+
+									<div class="tab-pane fade" id="cap02-features" role="tabpanel">
+										<ul class="pl-3">
 											<li class="project-text"> Admin and User Interfaces </li>
 											<li class="project-text"> Register and Log In </li>
 											<li class="project-text"> Data Validation (AJAX) </li>
@@ -279,11 +291,10 @@
 											<li class="project-text"> PayPal API </li>
 											<li class="project-text"> Mobile Responsive Design </li>
 										</ul>
-									</dd>
+									</div>
 
-									<dt class="col-12 sub-title d-block d-lg-none"> Environment: </dt>
-									<dd class="col-10 offset-1 row p-0 d-block d-lg-none">
-										<ul class="col-6">
+									<div class="tab-pane fade" id="cap02-environment" role="tabpanel">
+										<ul class="pl-3">
 											<li class="project-text"> HTML </li>
 											<li class="project-text"> CSS </li>
 											<li class="project-text"> Bootstrap </li>
@@ -292,12 +303,9 @@
 											<li class="project-text"> PHP </li>
 											<li class="project-text"> MySQL </li>
 										</ul>
-									</dd>
-									
-								</dl>
+									</div>
+								</div> <!-- end of tab content -->
 							</div>
-
-
 
 							<div class="col-12 col-lg-6">
 								<div id="project-carouselCap02" class="carousel slide" data-ride="carousel">
@@ -380,32 +388,10 @@
 										<span class="sr-only">Next</span>
 									</a>
 								</div> <!-- end of carousel -->
-
-								<dl class="row m-0 pt-3 d-none d-lg-block">
-									<dt class="col-12 sub-title"> Environment: </dt>
-									<dd class="col-10 offset-1 row p-0">
-										<ul class="col-4">
-											<li class="project-text"> HTML </li>
-											<li class="project-text"> CSS </li>
-											<li class="project-text"> Bootstrap </li>
-											
-										</ul>
-
-										<ul class="col-4">
-											<li class="project-text"> JavaScript </li>
-											<li class="project-text"> JQuery </li>
-										</ul>
-
-										<ul class="col-4">
-											<li class="project-text"> PHP </li>
-											<li class="project-text"> MySQL </li>
-										</ul>
-									</dd>
-								</dl>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> <!-- end of capstone 2 -->
 
 
 				<div id="capstone3" class="pt-5">
@@ -528,41 +514,26 @@
 										<span class="sr-only">Next</span>
 									</a>
 								</div> <!-- end of carousel -->
-
-								<dl class="row m-0 pt-3 d-none d-lg-block">
-									<dt class="col-12 sub-title"> Environment: </dt>
-									<dd class="col-10 offset-1 row p-0">
-										<ul class="col-4">
-											<li class="project-text"> HTML </li>
-											<li class="project-text"> CSS </li>
-											<li class="project-text"> Bootstrap </li>
-											
-										</ul>
-
-										<ul class="col-4">
-											<li class="project-text"> JavaScript </li>
-											<li class="project-text"> JQuery </li>
-											<li class="project-text"> PHP </li>
-										</ul>
-
-										<ul class="col-4">
-											<li class="project-text"> MySQL </li>
-											<li class="project-text"> Laravel </li>
-										</ul>
-									</dd>
-								</dl>
 							</div>
 
 
 
 							<div class="col-12 col-lg-6">
-								<dl class="row m-0 pt-3">
-									<dt class="col-12 col-lg-3 sub-title"> Description: </dt>
-									<dd class="col-10 offset-1 col-lg-9 offset-lg-0 project-text"> META is a Fullstack Website made with Laravel Framework. It allows users to record and track and categorize their expenses for better financial practices. It also has helpful articles that can be saved for future readings and unsave when necessary. Upon registration, new users will receive a verification email. Verified users has access to better features than unverified users. CRUD Operations for Admin is available for articles and user settings. </dd>
+								<div class="nav nav-pills nav-justified" role="tablist">
+									<a class="nav-item nav-link active sub-title" data-toggle="pill" href="#cap03-description" role="tab"> Description </a>
 
-									<dt class="col-12 col-lg-3 sub-title"> Features: </dt>
-									<dd class="col-10 offset-1 col-lg-9 offset-lg-0">
-										<ul>
+									<a class="nav-item nav-link sub-title" data-toggle="pill" href="#cap03-features" role="tab"> Features </a>
+
+									<a class="nav-item nav-link sub-title" data-toggle="pill" href="#cap03-environment" role="tab"> Environment </a>
+								</div>
+
+								<div class="tab-content px-3 py-1">
+									<div class="tab-pane fade show active" id="cap03-description" role="tabpanel">
+										<p class="project-text"> META is a Fullstack Website made with Laravel Framework. It allows users to record and track and categorize their expenses for better financial practices. It also has helpful articles that can be saved for future readings and unsave when necessary. Upon registration, new users will receive a verification email. Verified users has access to better features than unverified users. CRUD Operations for Admin is available for articles and user settings. </p>
+									</div>
+
+									<div class="tab-pane fade" id="cap03-features" role="tabpanel">
+										<ul class="pl-3">
 											<li class="project-text"> Admin and User Interfaces </li>
 											<li class="project-text"> Register and Log In </li>
 											<li class="project-text"> Data Validation (AJAX and Laravel) </li>
@@ -575,11 +546,10 @@
 											<li class="project-text"> Soft Deletes for Article Deletion </li>
 											<li class="project-text"> Mobile Responsive Design </li>
 										</ul>
-									</dd>
+									</div>
 
-									<dt class="col-12 sub-title d-block d-lg-none"> Environment: </dt>
-									<dd class="col-10 offset-1 row p-0 d-block d-lg-none">
-										<ul class="col-6">
+									<div class="tab-pane fade" id="cap03-environment" role="tabpanel">
+										<ul class="pl-3">
 											<li class="project-text"> HTML </li>
 											<li class="project-text"> CSS </li>
 											<li class="project-text"> Bootstrap </li>
@@ -589,8 +559,8 @@
 											<li class="project-text"> MySQL </li>
 											<li class="project-text"> Laravel </li>
 										</ul>
-									</dd>
-								</dl>
+									</div>
+								</div> <!-- end of tab content -->
 							</div>
 						</div>
 					</div>
