@@ -1,180 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 
-	<title> HPanganiban </title>
+	<title> HPanganiban</title>
 
-	<!-- jquery first then popper then bootstrap js -->
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-	<!-- animate css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<!-- popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
-	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Kanit|Share+Tech+Mono" rel="stylesheet">
+	<!-- bootstrap js -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
+	<!-- googlefonts -->
+	<link href="https://fonts.googleapis.com/css?family=Amaranth|Righteous" rel="stylesheet">
+	
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<!-- favicon -->
 	<link rel="icon" href="assets/images/icon.png">
-
 </head>
 <body>
 
-	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-		<a href="index.html" class="navbar-brand"><img id="logo" src="assets/images/icon.png" alt="icon" class="img-fluid"></a><p>Hannah Panganiban</p>
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<a href="index.html" class="navbar-brand title"><img id="logo" src="assets/images/icon.png" alt="icon" class="img-fluid"> Hannah Panganiban </a>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
-		</button> <!-- end of button collapse when screen is small -->
+		</button>
 
-		<div id="navbar-nav" class="collapse navbar-collapse">
+		<div class="collapse navbar-collapse text-center" id="navbar-nav">
 			<ul class="navbar-nav ml-auto">
-
-				<li>
-					<a id="active" class="nav-link" href="index.html"><i class="fas fa-spa" id="active"></i> Home</a>
+				<li class="nav-item">
+					<a class="nav-link" href="#aboutMe"> About Me </a>
 				</li>
 
-				<li>
-					<a class="nav-link" href="projects.html"><i class="fas fa-file-code" id="icon"></i> Projects</a>
+				<li class="nav-item">
+					<a class="nav-link" href="#projects"> Projects </a>
 				</li>
 
-				<li>
-					<a class="nav-link" href="contact.html"><i class="fas fa-paper-plane" id="icon"></i> Contact</a>
-				</li> 
+				<li class="nav-item">
+					<a class="nav-link" href="#footer"> Contact </a>
+				</li>
 
-				<li>
-					<a class="nav-link" href="https://docs.google.com/document/d/1ny1sdabAzWpwD4FhLfGa5j0ArgpHJpGw6Rp7A7ejZSc/edit?usp=sharing" target="_blank"><i class="fas fa-id-card" id="icon"></i> Resume</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="resumeDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Resume </a>
+
+					<div class="dropdown-menu" aria-labelledby="resumeDropDown">
+						<a class="dropdown-item p-0 text-center" href="https://docs.google.com/document/d/11Z5Qk77sHqvoOrkRcmAnA72DPTLXdmocUnafWDosE6c/preview" target="_blank"> View </a>
+						<a class="dropdown-item p-0 text-center" href="https://docs.google.com/document/d/11Z5Qk77sHqvoOrkRcmAnA72DPTLXdmocUnafWDosE6c/export?format=pdf"> Download </a>
+					</div>
 				</li>
 			</ul>
-		</div> <!-- end of nav buttons -->
-	</nav> <!-- end of nav -->
+		</div>
+	</nav> <!-- end of navigation -->
 
-
-	<div id="header-wrapper" class="container-fluid">
-		<header id="header" class="container-fluid">
-			<div class="typewriter">
-	  			<h1>Hannah Panganiban</h1>
-
-	  			<div class="css-typing">
-	  				<p>
-	  				Night Owl<span class="dot"> ✿ </span>
-	   				 Full Stack Web Developer<span class="dot"> ✿ </span>
-	   				 Cat Lover
-	 				</p>
-				</div>
+	<div class="container-fluid p-0">
+		<!-- ========== ABOUT ME ========== -->
+		<section id="aboutMe" class="pt-5">
+			<div class="header-background">
+				<img src="assets/images/aboutme.png" class="img-fluid d-block mx-auto">
 			</div>
-		</header> 
+			
+			<div class="row">
+				<div class="col-12 col-lg-6"></div>
 
-
-	<div class="arrow animated infinite bounce delay-2s">
-		<a href="#about-title"><img class="img-fluid" src="assets/images/arrow.png" alt="arrow"></a>
-	</div>
-
-	</div> <!-- end of header -->
-
-	<main id="landing-row" class="row">
-
-		<div class="about col-12 col-md-12 col-lg-6">
-			<h5 id="about-title" class="animated flipInX">
-				<i class="fas fa-user-circle" id="active"></i> About
-			</h5>
-
-			<div id="about-info">
-				<div class="card card-body">
-					<div class="media">
-						<img id="avatar" class="mr-3" src="assets/images/avatar.jpg" alt="avatar">
-						<div class="media-body">
-							<h5><strong>Hannah Grace F. Panganiban</strong></h5>
-							<p id="info">Hannah is a carrer shifter! From studying Accountancy, she then enrolled at Tuitt, Inc to learn how to code! This includes basic HTML, CSS and Bootstrap. There will be more to be added soon.</p>
-						</div>
-					</div> <!-- end of media -->
-				</div> <!-- end of card -->
-			</div> <!-- end of collapse -->
-		</div> <!-- end of about -->
+				<div class="col-12 col-lg-6"></div>
+			</div>
+		</section> <!-- end of about me -->
 
 
 
-		<div class="skills col-12 col-md-12 col-lg-6">
-			<h5 id="skills-title" class="animated flipInX">
-				<i class="fas fa-cogs" id="active"></i> Skills
-			</h5>
+		<!-- ========== PROJECTS ========== -->
+		<section id="projects" class="pt-5">
+			<div class="header-background">
+				<img src="assets/images/projects.png" class="img-fluid d-block mx-auto">
+			</div>
 
-			<div id="about-info">
-				<div id="card" class="card card-body">
-					<div class="media mb-5">
-						<img id="html" class="mr-3" src="assets/images/html.png" alt="html">
-						<div class="media-body mt-4">
-							<div class="progress">
-								<div id="html-bar" class="progress-bar progress-bar-striped progress-bar-animated"></div>
+			<div class="p-3">
+				<div class="row">
+					<div class="col-12 col-lg-4 mb-3">
+						<div class="hovereffect">
+							<img class="img-fluid" src="assets/images/catvsdog.png" alt="Cat vs Dog">
+							<div class="overlay">
+								<h2 class="title"> Cat vs Dog </h2>
+								<section class="info">
+									<p class="m-0 text-justify">Cat vs Dog contains a short story about a cat who somehow declared a war to an unsuspecting dog. A static website designed for kids and kid-like personalities!</p>
+
+									<div class="card-footer px-2 py-1 mt-2 fixed-bottom">
+										<a href="#capstone1" class="btn btn-outline-warning float-left"> Details </a>
+										<a href="https://hpanganiban.github.io/catvsdog/" target="_blank" class="btn btn-primary float-right"> Visit </a>
+									</div>
+								</section>
 							</div>
 						</div>
-					</div> <!-- end of html -->
+					</div> <!-- end of Cat vs Dog -->
 
-					<div class="media mb-5">
-						<img id="css" class="mr-3" src="assets/images/css.png" alt="html">
-						<div class="media-body mt-4">
-							<div class="progress">
-								<div id="css-bar" class="progress-bar progress-bar-striped progress-bar-animated"></div>
+					<div class="col-12 col-lg-4 mb-3">
+						<div class="hovereffect">
+							<img class="img-fluid" src="assets/images/dollware.png" alt="Dollware">
+							<div class="overlay">
+								<h2 class="title"> Dollware </h2>
+								<section class="info">
+									<p class="m-0 text-justify">Dollware is an E-commerce website that sells High Quality Ball Jointed Dolls (BJD) and various Outfits for different brands and sizes. Easy to use with search and filter functions both for items and orders.</p>
+
+									<div class="card-footer px-2 py-1 mt-2 fixed-bottom">
+										<a href="#capstone2" class="btn btn-outline-warning float-left"> Details </a>
+										<a href="https://dollware.000webhostapp.com/" target="_blank" class="btn btn-primary float-right"> Visit </a>
+									</div>
+								</section>
 							</div>
 						</div>
-					</div> <!-- end of css -->
+					</div> <!-- end of Dollware -->
 
-					<div class="media mb-5">
-						<img id="bootstrap" class="mr-3" src="assets/images/bootstrap.png" alt="html">
-						<div class="media-body mt-4">
-							<div class="progress">
-								<div id="bootstrap-bar" class="progress-bar progress-bar-striped progress-bar-animated"></div>
+					<div class="col-12 col-lg-4 mb-3">
+						<div class="hovereffect">
+							<img class="img-fluid" src="assets/images/meta.png" alt="META">
+							<div class="overlay">
+								<h2 class="title"> META </h2>
+								<section class="info">
+									<p class="m-0 text-justify">META (Modern Expense Tracking Application) is a fullstack website that records your daily expenses base on different categories.</p>
+
+									<div class="card-footer px-2 py-1 mt-2 fixed-bottom">
+										<a href="#capstone3" class="btn btn-outline-warning float-left"> Details </a>
+										<a href="https://whispering-earth-96090.herokuapp.com/" target="_blank" class="btn btn-primary float-right"> Visit </a>
+									</div>
+								</section>
 							</div>
 						</div>
-					</div> <!-- end of bootstrap -->
+					</div> <!-- end of META -->
+				</div> <!-- end of row -->
 
-					<div class="media mb-5">
-						<img id="php" class="mr-3" src="assets/images/php.png" alt="html">
-						<div class="media-body mt-4">
-							<div class="progress">
-								<div id="php-bar" class="progress-bar progress-bar-striped progress-bar-animated"></div>
+				<div id="capstone1" class="pt-5">
+					<div class="project-header">
+						<a href="https://hpanganiban.github.io/catvsdog/" target="_blank"> <img src="assets/images/cap1title.png" alt="Cat vs Dog Title"> </a>
+					</div>
+
+					<div class="project-content">
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<div id="project-carouselCap01" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#project-carouselCap01" data-slide-to="0" class="active"></li>
+										<li data-target="#project-carouselCap01" data-slide-to="1"></li>
+										<li data-target="#project-carouselCap01" data-slide-to="2"></li>
+										<li data-target="#project-carouselCap01" data-slide-to="3"></li>
+										<li data-target="#project-carouselCap01" data-slide-to="4"></li>
+										<li data-target="#project-carouselCap01" data-slide-to="5"></li>
+									</ol>
+
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap1-landing.png" alt="Cat vs Dog - Landing Page">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Landing Page </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap1-choosecat.png" alt="Cat vs Dog - Choose Cat">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Join the Cat! </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap1-choosedog.png" alt="Cat vs Dog - Choose Dog">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Join the Dog! </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap1-characters.png" alt="Cat vs Dog - Characters">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Characters </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap1-catpage.png" alt="Cat vs Dog - Cat Page">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Interactive Buttons </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap1-dogpage.png" alt="Cat vs Dog - Dog Page">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Story Routes </h6>
+											</div>
+										</div>
+									</div>
+
+									<a class="carousel-control-prev" href="#project-carouselCap01" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+
+									<a class="carousel-control-next" href="#project-carouselCap01" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div> <!-- end of carousel -->
+							</div>
+
+
+
+							<div class="col-12 col-lg-6">
+								<dl class="row m-0 pt-3">
+									<dt class="col-12 col-lg-3 sub-title"> Description: </dt>
+									<dd class="col-10 offset-1 col-lg-9 offset-lg-0 project-text"> A static website focusing on Frontend Development. Has features that allow the users/visitors to navigate through the website interactively by deciding and choosing their own path. With this, users/visitors can have a fun experience on discovering various hidden pages and story routes/endings. </dd>
+
+									<dt class="col-12 col-lg-3 sub-title"> Features: </dt>
+									<dd class="col-10 offset-1 col-lg-9 offset-lg-0">
+										<ul>
+											<li class="project-text"> User-Interactive </li>
+											<li class="project-text"> Fun and Uplifting Background Music </li>
+											<li class="project-text"> Contains different Story Routes </li>
+											<li class="project-text"> Mobile Responsive Design </li>
+										</ul>
+									</dd>
+
+									<dt class="col-12 col-lg-3 sub-title"> Environment: </dt>
+									<dd class="col-10 offset-1 col-lg-9 offset-lg-0 row p-0">
+										<ul class="col-6">
+											<li class="project-text"> HTML </li>
+											<li class="project-text"> CSS </li>
+										</ul>
+
+										<ul class="col-6">
+											<li class="project-text"> JavaScript </li>
+											<li class="project-text"> Bootstrap </li>
+										</ul>
+									</dd>
+								</dl>
 							</div>
 						</div>
-					</div> <!-- end of php -->
+					</div>
+				</div>
 
-					<div class="media mb-5">
-						<img id="laravel" class="mr-3" src="assets/images/laravel.png" alt="html">
-						<div class="media-body mt-4">
-							<div class="progress">
-								<div id="laravel-bar" class="progress-bar progress-bar-striped progress-bar-animated"></div>
+
+				<div id="capstone2" class="pt-5">
+					<div class="project-header">
+						<a href="https://dollware.000webhostapp.com/" target="_blank"> <img class="ml-auto d-block" src="assets/images/cap2title.png" alt="Dollware Title"> </a>
+					</div>
+
+					<div class="project-content">
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<dl class="row m-0 pt-3">
+									<dt class="col-12 col-lg-3 sub-title"> Description: </dt>
+									<dd class="col-10 offset-1 col-lg-9 offset-lg-0 project-text"> An E-Commerce website focusing on Backend Development. Allows non-registed visitors and registered users to view, search, filter items and add those to cart. Registered users can proceed to Payment, which can either be COD or PayPal. An email confirmation will be received upon order placement. Has Order History grouped by Order status for easier tracking of transactions. Admin can update the order status of every transactions made by the users and has CRUD for Items (e.g adding, editing, deleting). </dd>
+
+									<dt class="col-12 col-lg-3 sub-title"> Features: </dt>
+									<dd class="col-10 offset-1 col-lg-9 offset-lg-0">
+										<ul>
+											<li class="project-text"> Admin and User Interfaces </li>
+											<li class="project-text"> Register and Log In </li>
+											<li class="project-text"> Data Validation (AJAX) </li>
+											<li class="project-text"> Filter/Search Functions </li>
+											<li class="project-text"> CRUD Operations for both Admin and User </li>
+											<li class="project-text"> PHP Mailer (Receives mail for every Order Placement) </li>
+											<li class="project-text"> PayPal API </li>
+											<li class="project-text"> Mobile Responsive Design </li>
+										</ul>
+									</dd>
+
+									<dt class="col-12 sub-title d-block d-lg-none"> Environment: </dt>
+									<dd class="col-10 offset-1 row p-0 d-block d-lg-none">
+										<ul class="col-6">
+											<li class="project-text"> HTML </li>
+											<li class="project-text"> CSS </li>
+											<li class="project-text"> Bootstrap </li>
+											<li class="project-text"> JavaScript </li>
+											<li class="project-text"> JQuery </li>
+											<li class="project-text"> PHP </li>
+											<li class="project-text"> MySQL </li>
+										</ul>
+									</dd>
+									
+								</dl>
+							</div>
+
+
+
+							<div class="col-12 col-lg-6">
+								<div id="project-carouselCap02" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#project-carouselCap02" data-slide-to="0" class="active"></li>
+										<li data-target="#project-carouselCap02" data-slide-to="1"></li>
+										<li data-target="#project-carouselCap02" data-slide-to="2"></li>
+										<li data-target="#project-carouselCap02" data-slide-to="3"></li>
+										<li data-target="#project-carouselCap02" data-slide-to="4"></li>
+										<li data-target="#project-carouselCap02" data-slide-to="5"></li>
+										<li data-target="#project-carouselCap02" data-slide-to="6"></li>
+										<li data-target="#project-carouselCap02" data-slide-to="7"></li>
+									</ol>
+
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap2-landing.png" alt="Dollware - Landing Page">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Landing Page </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap2-shop.png" alt="Dollware - Shop Page">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Shop Page </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap2-cart.png" alt="Dollware - Cart Page">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Cart Page </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap2-description.png" alt="Dollware - Item Description">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Item Description </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap2-history.png" alt="Dollware - Order History">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Order History </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap2-add.png" alt="Dollware - Add Page">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Add Item (Admin) </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap2-edit.png" alt="Dollware - Edit Page">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Edit Item (Admin) </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap2-list.png" alt="Dollware - Order List">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Order List (Admin) </h6>
+											</div>
+										</div>
+									</div>
+
+									<a class="carousel-control-prev" href="#project-carouselCap02" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+
+									<a class="carousel-control-next" href="#project-carouselCap02" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div> <!-- end of carousel -->
+
+								<dl class="row m-0 pt-3 d-none d-lg-block">
+									<dt class="col-12 sub-title"> Environment: </dt>
+									<dd class="col-10 offset-1 row p-0">
+										<ul class="col-4">
+											<li class="project-text"> HTML </li>
+											<li class="project-text"> CSS </li>
+											<li class="project-text"> Bootstrap </li>
+											
+										</ul>
+
+										<ul class="col-4">
+											<li class="project-text"> JavaScript </li>
+											<li class="project-text"> JQuery </li>
+										</ul>
+
+										<ul class="col-4">
+											<li class="project-text"> PHP </li>
+											<li class="project-text"> MySQL </li>
+										</ul>
+									</dd>
+								</dl>
 							</div>
 						</div>
-					</div> <!-- end of laravel -->
+					</div>
+				</div>
 
-				</div> <!-- end of card -->
-			</div> <!-- end of collapse -->
-		</div> <!-- end of skills -->
-	</main> <!-- end of main -->
 
-	<footer id="footer">
-		<small>Hannah Panganiban<span class="dot"> ✿ </span>2018</small>
+				<div id="capstone3" class="pt-5">
+					<div class="project-header">
+						<a href="https://whispering-earth-96090.herokuapp.com/" target="_blank"> <img src="assets/images/cap3title.png" alt="META Title"> </a>
+					</div>
 
-		<a href="mailto:panganiban.hannah@gmail.com" target="_top"><img id="footer-icon" class="float-right" src="assets/images/gmail.png"></a>
+					<div class="project-content">
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<div id="project-carouselCap03" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#project-carouselCap03" data-slide-to="0" class="active"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="1"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="2"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="3"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="4"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="5"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="6"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="7"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="8"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="9"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="10"></li>
+										<li data-target="#project-carouselCap03" data-slide-to="11"></li>
+									</ol>
 
-		<a href="https://gitlab.com/hpanganiban" target="_blank"><img id="footer-icon" class="float-right" src="assets/images/gitlab.png"></a>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-landing.png" alt="META - Landing Page">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Landing Page </h6>
+											</div>
+										</div>
 
-		<a href="https://github.com/hpanganiban" target="_blank"><img id="footer-icon" class="float-right" src="assets/images/github.png"></a>
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-tracker.png" alt="META - Expense Tracker">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Record your Expenses </h6>
+											</div>
+										</div>
 
-		<a href="https://facebook.com/misayukimura" target="_blank"><img id="footer-icon" class="float-right" src="assets/images/fb.png"></a>
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-articles.png" alt="META - articles">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> View and Save Articles </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-validation.png" alt="META - Validation">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Data Validation </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-verify.png" alt="META - Verify">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Email Verification </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-userinfo.png" alt="META - User Info">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> User Info (Edit and View) </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-savedexpenses.png" alt="META - Saved Expenses">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> View and Track Expenses </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-savedarticles.png" alt="META - Saved Articles">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> View and Unsave Articles </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-articlessetting.png" alt="META - Article Settings">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Article Settings (Admin) </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-articleadd.png" alt="META - Article Add">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Article Add (Admin) </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-articleedit.png" alt="META - Article Edit">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Article Edit (Admin) </h6>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<img class="d-block w-100 img-fluid project-image" src="assets/images/cap3-usersettings.png" alt="META - User Settings">
+											<div class="carousel-caption d-none d-md-block">
+												<h6 class="title"> Ban/Unban Users (Admin) </h6>
+											</div>
+										</div>
+									</div>
+
+									<a class="carousel-control-prev" href="#project-carouselCap03" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+
+									<a class="carousel-control-next" href="#project-carouselCap03" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div> <!-- end of carousel -->
+
+								<dl class="row m-0 pt-3 d-none d-lg-block">
+									<dt class="col-12 sub-title"> Environment: </dt>
+									<dd class="col-10 offset-1 row p-0">
+										<ul class="col-4">
+											<li class="project-text"> HTML </li>
+											<li class="project-text"> CSS </li>
+											<li class="project-text"> Bootstrap </li>
+											
+										</ul>
+
+										<ul class="col-4">
+											<li class="project-text"> JavaScript </li>
+											<li class="project-text"> JQuery </li>
+											<li class="project-text"> PHP </li>
+										</ul>
+
+										<ul class="col-4">
+											<li class="project-text"> MySQL </li>
+											<li class="project-text"> Laravel </li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+
+
+
+							<div class="col-12 col-lg-6">
+								<dl class="row m-0 pt-3">
+									<dt class="col-12 col-lg-3 sub-title"> Description: </dt>
+									<dd class="col-10 offset-1 col-lg-9 offset-lg-0 project-text"> META is a Fullstack Website made with Laravel Framework. It allows users to record and track and categorize their expenses for better financial practices. It also has helpful articles that can be saved for future readings and unsave when necessary. Upon registration, new users will receive a verification email. Verified users has access to better features than unverified users. CRUD Operations for Admin is available for articles and user settings. </dd>
+
+									<dt class="col-12 col-lg-3 sub-title"> Features: </dt>
+									<dd class="col-10 offset-1 col-lg-9 offset-lg-0">
+										<ul>
+											<li class="project-text"> Admin and User Interfaces </li>
+											<li class="project-text"> Register and Log In </li>
+											<li class="project-text"> Data Validation (AJAX and Laravel) </li>
+											<li class="project-text"> Email Verification (Laravel) </li>
+											<li class="project-text"> Page/Feature Restrictions base on User Role and Verification </li>
+											<li class="project-text"> CRUD Operations for both Admin and User </li>
+											<li class="project-text"> Content Writing directly on webpage </li>
+											<li class="project-text"> Image Preview before Upload </li>
+											<li class="project-text"> Multiple category on one Article </li>
+											<li class="project-text"> Soft Deletes for Article Deletion </li>
+											<li class="project-text"> Mobile Responsive Design </li>
+										</ul>
+									</dd>
+
+									<dt class="col-12 sub-title d-block d-lg-none"> Environment: </dt>
+									<dd class="col-10 offset-1 row p-0 d-block d-lg-none">
+										<ul class="col-6">
+											<li class="project-text"> HTML </li>
+											<li class="project-text"> CSS </li>
+											<li class="project-text"> Bootstrap </li>
+											<li class="project-text"> JavaScript </li>
+											<li class="project-text"> JQuery </li>
+											<li class="project-text"> PHP </li>
+											<li class="project-text"> MySQL </li>
+											<li class="project-text"> Laravel </li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- end of wrapper with padding -->
+		</section> <!-- end of projects -->
+	</div> <!-- end of container -->
+
+
+
+	<footer id="footer" class="px-2">
+		<div class="row m-0">
+			<div class="col-12 col-lg-4">
+				<p class="text-center mb-0 title"> Hannah Panganiban <span class="dot"> ✿ </span> 2019 </p>
+				<p class="text-center mb-0"><small class="text-muted"> Last updated on February 6, 2019 </small></p>
+				<p class="text-center mb-1"><small>
+					<a id="disclaimer" class="text-muted" data-content="No copyright infringement intended. I do not own the multimedia contents (e.g images, fonts, etc.) nor I take credit for it. I am not selling the website or making profits from it." rel="popover" data-placement="bottom" data-trigger="hover"> Disclaimer <i class="fas fa-exclamation-circle text-danger"></i> </a>
+				</small></p>
+				
+			</div>
+
+			<div class="col-12 col-lg-4">
+				<p class="text-center mb-0 title"> Repositories </p>
+
+				<dl class="row mb-1">
+					<dt class="col-2 offset-1 col-lg-2 offset-lg-2 text-right"> <a href="https://gitlab.com/hpanganiban" target="_blank"><img id="footer-icon" src="assets/images/gitlab.png"></a> </dt>
+					<dd class="col-9 col-lg-8 text-muted"> Gitlab/hpanganiban </dd>
+
+					<dt class="col-2 offset-1 col-lg-2 offset-lg-2 text-right"> <a href="https://github.com/hpanganiban" target="_blank"><img id="footer-icon" src="assets/images/github.png"></a> </dt>
+					<dd class="col-9 col-lg-8 text-muted"> Github/hpanganiban </dd>
+				</dl>
+			</div>
+
+			<div class="col-12 col-lg-4">
+				<p class="text-center mb-0 title"> Contact Details </p>
+
+				<dl class="row mb-1">
+					<dt class="col-2 offset-1 text-right"> <i class="fas fa-at"></i> </dt>
+					<dd class="col-9 text-muted"> panganiban.hannah@gmail.com </dd>
+
+					<dt class="col-2 offset-1 text-right"> <i class="fas fa-mobile-alt"></i> </dt>
+					<dd class="col-9 text-muted"> +63-9164387771 </dd>
+
+					<dt class="col-2 offset-1 text-right"> <i class="fas fa-phone"></i> </dt>
+					<dd class="col-9 text-muted"> 02-8792579 </dd>
+				</dl>
+			</div>
+		</div>
 	</footer> <!-- end of footer -->
 
 
+	<!-- external js -->
+	<script type="text/javascript" src="assets/js/script.js"></script>
+
 </body>
 </html>
+
