@@ -25,7 +25,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ffa461;
+  background-color: rgb(255,165,0,0.7);
 }
 
 
@@ -65,6 +65,10 @@ html {
 .dropdown-item {
   color: white;
 }
+
+.brand-title {
+  color: orange;
+}
 /*end of navigation*/
 
 
@@ -87,11 +91,20 @@ html {
   height: 100px;
 }
 
+.aboutme-info {
+  min-height: 150px;
+}
+
+.avatar {
+  height: 150px;
+  border-radius: 15px;
+}
+
 .expertise-title {
   font-family: 'Righteous', cursive;
   background-color: rgb(0,0,0, 0.7);
 }
-
+/*end of about me*/
 
 
 
@@ -245,7 +258,7 @@ html {
   transform: scale(1);
   background-color: rgba(0,0,0,0.7);
 }
-
+/*end of projects*/
 
 
 
