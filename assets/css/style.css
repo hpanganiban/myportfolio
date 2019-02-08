@@ -74,16 +74,34 @@ html {
 
 
 
-/* ==================== SECTIONS ==================== */
-#aboutMe,
-#expertise,
-#projects {
-  min-height: 100vh;
+/* ==================== ABOUT ME ==================== */
+.aboutme-content {
+  background-color: rgb(255,255,255, 0.6);
+  border-radius: 0 0 20px 20px;
+  border-top: 1px solid white;
+  height: 75vh;
+  overflow-y: auto;
 }
 
+.aboutme-image {
+  height: 100px;
+}
+
+.expertise-title {
+  font-family: 'Righteous', cursive;
+  background-color: rgb(0,0,0, 0.7);
+}
+
+
+
+
+
+
+
+/* ==================== PROJECTS ==================== */
 .title {
   font-family: 'Righteous', cursive;
-  color: orange!important;
+  color: orange;
 }
 
 .sub-title {
@@ -103,7 +121,7 @@ html {
 }
 
 .project-content {
-  background-color: rgb(255,255,255, 0.7);
+  background-color: rgb(255,255,255, 0.6);
   border-radius: 0 0 20px 20px;
   height: 350px;
 }
