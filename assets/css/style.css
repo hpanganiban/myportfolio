@@ -290,6 +290,7 @@ html {
 
 #disclaimer {
   text-decoration: none;
+  cursor: pointer;
 }
 /*end of footer*/
 
